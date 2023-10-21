@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1>Subject Schedule</h1>
+
+    <div id="subject-form">
+        <h2>Add Subject</h2>
+        <input type="text" id="subject" placeholder="Subject">
+        <input type="text" id="day" placeholder="Day">
+        <input type="text" id="time" placeholder="Time">
+        <input type="text" id="room" placeholder="Room">
+        <input type="text" id="instructor" placeholder="Instructor">
+        <button onclick="addSubject()">Add</button>
+    </div>
+
+    <div id="subject-list">
+        <h2>Subject List</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Subject</th>
+                    <th>Day</th>
+                    <th>Time</th>
+                    <th>Room</th>
+                    <th>Instructor</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="subject-table-body">
+                <!-- Subjects will be displayed here -->
+            </tbody>
+        </table>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
